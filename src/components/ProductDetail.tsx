@@ -107,6 +107,11 @@ export default function ProductDetail({ product }: { product: Product }) {
               <Link href={`${productHref(product)}/privacy`} className="text-white/70 underline-offset-4 hover:text-white hover:underline">
                 Privacy policy →
               </Link>
+              {getStorePages(product.slug)?.terms && (
+                <Link href={`${productHref(product)}/terms`} className="text-white/70 underline-offset-4 hover:text-white hover:underline">
+                  Terms of service →
+                </Link>
+              )}
             </div>
           )}
           <Link href="/#contact" className="mt-8 block rounded-full border border-white/20 px-5 py-3 text-center text-sm font-semibold text-white hover:bg-white/5">

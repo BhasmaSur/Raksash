@@ -65,6 +65,14 @@ async function SupportContent({ params }: Pick<PageProps<"/games/[slug]/support"
         <Link href={`${productHref(product)}/privacy`} className="text-white/80 underline">
           Privacy policy
         </Link>
+        {pages.terms && (
+          <>
+            {" · "}
+            <Link href={`${productHref(product)}/terms`} className="text-white/80 underline">
+              Terms of service
+            </Link>
+          </>
+        )}
       </p>
     </StorePageShell>
   );

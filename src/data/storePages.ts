@@ -17,6 +17,9 @@ export type StorePages = {
   lastUpdated: string;
   contactEmail: string;
   privacy: PolicySection[];
+  /** Optional Terms of Service; when present, /games/<slug>/terms is generated. */
+  terms?: PolicySection[];
+  termsLastUpdated?: string;
   faq: Faq[];
 };
 
@@ -84,6 +87,79 @@ export const storePages: Record<string, StorePages> = {
         heading: "Changes to this policy",
         paragraphs: [
           "If we change how Poof handles information, we'll update this page and the \"Last updated\" date above.",
+        ],
+      },
+    ],
+    termsLastUpdated: "7 November 2026",
+    terms: [
+      {
+        heading: "Agreement",
+        paragraphs: [
+          "These terms apply to your use of the Poof mobile game (\"Poof\", \"the app\") on Android and iOS. By downloading or playing Poof, you agree to them. If you don't agree, please don't use the app.",
+          "If you downloaded Poof from the Apple App Store, Apple's Standard Licensed Application End User License Agreement also applies, and Apple is not responsible for the app or its support. If you downloaded it from Google Play, Google Play's Terms of Service also apply.",
+        ],
+      },
+      {
+        heading: "Using Poof",
+        paragraphs: [
+          "Poof is free to download and play. We give you a personal, non-exclusive, non-transferable licence to use the app on devices you own or control, for your own entertainment.",
+        ],
+        bullets: [
+          "Poof has no accounts and no in-app purchases.",
+          "Online rooms need an internet connection. Play vs CPU works offline.",
+          "You must be at least 13 years old to use Poof.",
+        ],
+      },
+      {
+        heading: "Fair play and nicknames",
+        paragraphs: ["Poof is a party game, so keep it fun for everyone. When you play, you agree not to:"],
+        bullets: [
+          "Use a nickname that is offensive, hateful, sexual, or pretends to be someone else.",
+          "Cheat, use bots or modified clients in online rooms, or interfere with other players' games.",
+          "Attack, overload, reverse-engineer or try to gain unauthorised access to the Poof server or app, except where the law allows it.",
+          "Use Poof for anything illegal.",
+        ],
+      },
+      {
+        heading: "Ads",
+        paragraphs: [
+          "Poof is supported by ads from Google AdMob. Ads are provided by third parties, and we don't control or endorse the products or services they promote. How ad data is handled is explained in the Privacy Policy.",
+        ],
+      },
+      {
+        heading: "Ownership",
+        paragraphs: [
+          "Poof, including its name, design, code, graphics and sounds, belongs to its developer and is protected by intellectual property laws. These terms don't give you any right to copy, modify, distribute or sell any part of the app.",
+        ],
+      },
+      {
+        heading: "Availability and changes",
+        paragraphs: [
+          "We may update, change or stop any part of Poof at any time, including the online game server, without notice. Online rooms may sometimes be unavailable, for example during maintenance or outages. We may block access to online play for anyone who breaks these terms.",
+        ],
+      },
+      {
+        heading: "Disclaimer",
+        paragraphs: [
+          "Poof is provided \"as is\" and \"as available\", without warranties of any kind, to the fullest extent permitted by law. We don't promise that the app will be uninterrupted, error-free or free of harmful components. Play responsibly and stay aware of your surroundings when flinging the bomb, especially when moving around with your phone.",
+        ],
+      },
+      {
+        heading: "Limitation of liability",
+        paragraphs: [
+          "To the fullest extent permitted by law, the developer of Poof is not liable for any indirect, incidental, special or consequential damages, or for any loss of data, device damage or interruption, arising from your use of or inability to use the app. Nothing in these terms limits any rights you have under consumer protection laws that can't be excluded.",
+        ],
+      },
+      {
+        heading: "Privacy",
+        paragraphs: [
+          "Our Privacy Policy explains what information Poof handles and why. You can read it at https://www.raksash.com/games/poof/privacy.",
+        ],
+      },
+      {
+        heading: "Changes to these terms",
+        paragraphs: [
+          "We may update these terms from time to time. When we do, we'll change the \"Last updated\" date above. If you keep using Poof after an update, you accept the new terms.",
         ],
       },
     ],
