@@ -10,7 +10,7 @@ const grotesk = Space_Grotesk({ variable: "--font-grotesk", subsets: ["latin"] }
 export const metadata: Metadata = {
   title: { default: "Raksash — Full Stack Developer", template: "%s · Raksash" },
   description:
-    "Portfolio of Raksash, a senior full stack engineer building apps and games — Ghoomyo, ScamMeTwice, Rann and Poof.",
+    "Portfolio of Raksash, a senior full stack engineer building apps and games — Ghoomyo, ScamMeTwice, Saya, Katpootli, Rann and Poof.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

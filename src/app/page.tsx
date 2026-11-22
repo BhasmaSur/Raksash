@@ -5,7 +5,7 @@ import SectionHeading from "@/components/SectionHeading";
 import { getApps, getGames, products } from "@/data/products";
 import { journey, profile, skills } from "@/data/profile";
 
-const domains = ["Payments", "Microservices", "Bookings", "Online safety", "Mobile apps", "Games"];
+const domains = ["Payments", "Microservices", "Bookings", "Online safety", "Mobile apps", "3D tools", "Games"];
 
 const stats = [
   { value: "9+", label: "Years of experience", color: "from-pink-400 to-fuchsia-400" },

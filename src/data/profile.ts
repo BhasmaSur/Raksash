@@ -69,6 +69,8 @@ export const journey: JourneyStep[] = [
     highlights: [
       "Ghoomyo: store booking platform on Android, iOS and web",
       "ScamMeTwice + ScamSafe: scam reports with in-Google warnings",
+      "Saya: trip safety check-ins with background location tracking",
+      "Katpootli: browser-based 3D character animation with GLB/FBX export",
       "Rann: a 2.5D fighter with rollback netcode, built in Godot 4",
       "Poof: a 2–12 player phone-to-phone party game",
     ],
